@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script src="~/Scripts/Script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top" style="background-color:black">
+        <!-- top nav -->
+        <nav class="navbar navbar-top hidden-xs">
+            <div class="container">
+                <!-- left nav top -->
+                <ul class="nav navbar-nav pull-left">
+                    <li><a href="#"><span class="glyphicon glyphicon-thumbs-up text-white"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-globe text-white"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-pushpin text-white"></span></a></li>
+                    <li><a href="#"><span class="text-white">QUESTIONS? CALL: <b>+2165551234</b></span></a></li>
+                </ul>
+                <!-- right nav top -->
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="#" class="text-white">About Us</a></li>
+                    <li><a href="#" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="dividline light-grey"></div>
+        </nav>
+        <!-- down nav -->
+        <nav class="navbar navbar-down">
+            <div class="container">
+                <div class="flex-container">
+                    <div class="navbar-header flex-item">
+                        <div class="navbar-brand" href="#">Magic 8-Ball</div>
+                    </div>
+                    <ul class="nav navbar-nav flex-item hidden-xs">
+                        <li><a href="#">Responses</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">The Team</a></li>
+                    </ul>
+                    @*<ul class="nav navbar-nav flex-item hidden-xs pull-right">
+                        <li><a href="#" class="">offer!</a></li>
+                    </ul>*@
+                    <!-- dropdown only moblie -->
+                    <div class="dropdown visible-xs pull-right">
+                        <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Responses</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">The Team</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <!--bg img  -->
+    <header>
+        <img src="~/Content/Images/8_ball-1024x910.jpg" style="width:100%"/>
+    </header>    
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

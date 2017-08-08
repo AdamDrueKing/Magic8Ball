@@ -1,0 +1,38 @@
+﻿body {
+    background-color:black;
+}
+.welcomeScreen {
+    margin-top:100px;
+    margin-bottom:20px;
+    width:50%;
+    text-align:center;
+    font-size:30px;
+}
+
+.button {
+    font-size:30px;
+    width:30%;
+    margin-bottom:20px;
+    color:#E87E04;
+    margin-top:100px;
+}
+
+.fortune {
+    border-style:solid;
+    border-width:thin;
+    /*border-radius:50%;*/
+    /*align-content:center;*/
+    /*width:75%;*/
+    /*display:inline-block;*/
+    margin:10px;
+    font-size:20px;
+    padding:15px;
+    /*background-color:white;*/
+    color:maroon;
+    text-align:center;
+}
+
+
+.numbers {
+    text-align:center;
+}
